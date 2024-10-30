@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center ;
+}
+section{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    scroll-snap-align: center;
+}
+.first{
+    background-image: url(tesla\ 1.jpg);
+}
+.second{
+    background-image: url(tesla\ 2.jpg);
+}
+.third{
+    background-image: url(images\ \(1\).jpg);
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 23rem;
+    z-index: 1;
+}
+h2{
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+.button{
+    display: flex;
+    gap: 2rem;
+}
+button{
+    padding: 0px 80px;
+    line-height: 24px;
+    height: 40px;
+    font-weight: 400;
+    letter-spacing: .25px;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    
+}
+.primary{
+    background-color: rgb(25,125, 155);
+    color: black;
+}
+.secondary{
+    background-color: white;
+}
+@media screen and (max-width:560px) {
+    .content{
+        gap: 10px;
+    }
+    .button{
+        flex-direction: column;
+        gap: 10px;
+    }
+    button{
+        align-self: flex-start;
+        display: block;
+        width: 100%;
+    }
+}
